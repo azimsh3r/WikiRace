@@ -1,3 +1,4 @@
+[![FinalTest](https://github.com/cscenter/csc-kotlin-final-test/actions/workflows/FinalTest.yml/badge.svg)](https://github.com/cscenter/csc-kotlin-final-test/actions/workflows/FinalTest.yml)
 
 ### Final test
 
