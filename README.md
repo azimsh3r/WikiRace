@@ -11,10 +11,12 @@ See the provided links for more details.
 
 The project has tests that must be fully passed before the assignment is submitted. Additionally, the project has style checks configured by Detekt and Diktat that must be passed (using the Suppress annotation is prohibited).
 
-To run all tests locally, you can use:`./gradlew test`;
+To run the tests you could use predefined run configurations or run them manually:
 
-To run task #1 tests locally, you can use:`./gradlew :task1:test`;
+* To run all tests locally, you can use:`./gradlew test`;
 
-To run Detekt locally, you can use: `./gradlew detektCheckAll`;
+* To run task #1 tests locally, you can use:`./gradlew :task1:test`;
 
-To run Diktat locally, you can use: `./gradlew diktatCheckAll`.
+* To run Detekt locally, you can use: `./gradlew detektCheckAll`;
+
+* To run Diktat locally, you can use: `./gradlew diktatCheckAll`.
