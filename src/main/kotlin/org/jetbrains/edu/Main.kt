@@ -1,4 +1,4 @@
-package jub.task1
+package org.jetbrains.edu
 
 fun main() {
     // Write your code
