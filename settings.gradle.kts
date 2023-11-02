@@ -1,1 +1,1 @@
-rootProject.name = "pc-test"
+rootProject.name = "kotlin-test-parallel-concurrent"

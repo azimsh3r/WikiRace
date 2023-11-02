@@ -1,5 +1,5 @@
 package org.jetbrains.edu
 
-fun main() {
-    // Write your code
+fun main(args: Array<String>) {
+    // Call your cli application here, passing the args
 }

@@ -5,6 +5,7 @@ plugins {
     kotlin("jvm") version "1.9.20"
     id("io.gitlab.arturbosch.detekt") version "1.23.3"
     id("org.cqfn.diktat.diktat-gradle-plugin") version "1.2.3"
+    application
 }
 
 repositories {
@@ -41,4 +42,12 @@ diktat {
 tasks.register("diktat") {
     group = "verification"
     dependsOn(tasks.getByName("diktatCheck"))
+}
+
+application {
+    mainClass.set("org.jetbrains.edu.wikirace.MainKt")
+}
+
+tasks.getByName<JavaExec>("run") {
+    standardInput = System.`in`
 }

@@ -54,17 +54,17 @@ val forbiddenPrefixes = listOf(
 
 ### Grades
 
-50% for synchronous version that passes tests. 
+25% for passing tests, even if the implementation is synchronous. 
 
-+25% for multithreaded version. You can use either threads or coroutines.
+50% for multithreaded version. You can use either threads or coroutines.
 
-+25% for CLI.
+25% for CLI.
 
 **If you have two red builds, you will receive half of the available points.**
 
 To run the tests you could use predefined run configurations or run them manually:
 
-**NOTE**: Wikipedia pages get updated more frequntly than tests to this task, so 
+**NOTE**: Wikipedia pages get updated more frequently than tests to this task, so 
 [line 24 here](./src/test/kotlin/ParsingTest.kt) might be wrong.
 * To run all tests locally, you can use:`./gradlew test`;
 
