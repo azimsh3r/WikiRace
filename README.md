@@ -12,11 +12,12 @@ from a start page to a destination page.
 Your solution should be a console app with the following arguments:
 - `search-depth` – How many transitions from the start page are allowed. Don't forget to check if the depth is > 0 and 
 inform the user if the input is incorrect.
-- Optional `max-threads` – How many threads to use (the default value is one). Don't forget to check if the number of 
+- Optional `max-threads` – How many threads to use, the default value is one. Don't forget to check if the number of 
 threads is > 0 and inform the user if the input is incorrect.
-- Optional `start` – If provided, then the solution should start searching from the Wikipedia page with the given title, 
-otherwise it should start from any Wikipedia article. For example, if `AVL tree` is given as the `start` argument, your
-search should start from `https://en.wikipedia.org/wiki/AVL_tree`.
+- Optional `start` and `final` – If provided, then the solution should start searching from the Wikipedia page with the 
+given title, otherwise it should start from any Wikipedia article. For example, if `AVL tree` is given as the `start` 
+argument, your search should start from `https://en.wikipedia.org/wiki/AVL_tree`. Same applies to final. **OR** your
+application can allow for multiple races, and wait for user input to get `start` and `final`.
 
 The output of the app is a sequence of pages in the found path, or a message saying that no path was found within the
 search depth. Consider displaying the progress, so that the user knows that the application has not frozen.
@@ -63,6 +64,8 @@ val forbiddenPrefixes = listOf(
 
 To run the tests you could use predefined run configurations or run them manually:
 
+**NOTE**: Wikipedia pages get updated more frequntly than tests to this task, so 
+[line 24 here](./src/test/kotlin/ParsingTest.kt) might be wrong.
 * To run all tests locally, you can use:`./gradlew test`;
 
 * To run Detekt locally, you can use: `./gradlew detekt`;
