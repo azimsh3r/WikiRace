@@ -11,7 +11,7 @@ interface WikiRacer {
 
     /**
      * Returns a list of all wikipedia articles references from the given page.
-     * Don't forget to create the full link, e.g. `/wiki/JetBrains -> https://en.wikipedia.org/wiki/JetBrains`
+     * Remember to create the full link, e.g. `/wiki/JetBrains -> https://en.wikipedia.org/wiki/JetBrains`
      *
      * @param page Wikipedia page
      *

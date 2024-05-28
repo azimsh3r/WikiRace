@@ -13,7 +13,7 @@ internal class ParsingTest {
         assertEquals(
             referencesNumber,
             references.size,
-            "For thw url: $url you need to extract $referencesNumber references."
+            "For the url: $url you need to extract $referencesNumber references."
         )
         expectedReferences.forEach {
             assertTrue(it in references, "The reference: $it must be found by the $url url.")
