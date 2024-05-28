@@ -1,4 +1,4 @@
-package org.jetbrains.edu.wikirace
+package org.jetbrains.edu.kotlin.wikirace
 
 /**
  * @property path The list of all links followed in the search path, including the destination page.

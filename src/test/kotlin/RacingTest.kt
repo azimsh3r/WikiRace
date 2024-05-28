@@ -1,4 +1,5 @@
-import org.jetbrains.edu.wikirace.*
+import org.jetbrains.edu.kotlin.wikirace.WikiPath
+import org.jetbrains.edu.kotlin.wikirace.WikiRacer
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments

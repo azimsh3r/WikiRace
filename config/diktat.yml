@@ -74,17 +74,17 @@
     maxSpaces: 1
     saveInitialFormattingForEnums: false
 - name: LONG_NUMERICAL_VALUES_SEPARATED
-  enabled: true
-  configuration:
-    maxNumberLength: 5
-    maxBlockLength: 3
+  enabled: false
 - name: WRONG_DECLARATIONS_ORDER
   enabled: true
   configuration:
     sortEnum: true
     sortProperty: true
 - name: COMMENT_WHITE_SPACE
-  enabled: false
+  enabled: true
+  configuration:
+    maxSpacesBeforeComment: 2
+    maxSpacesInComment: 1
 - name: TYPE_ALIAS
   enabled: true
   configuration:
@@ -102,11 +102,6 @@
   enabled: true
   configuration:
     maxNestedBlockQuantity: 4
-- name: TRAILING_COMMA
-  enabled: true
-  configuration:
-    valueArgument: true
-    valueParameter: true
 - name: MISSING_KDOC_ON_FUNCTION
   enabled: false
 - name: MISSING_KDOC_CLASS_ELEMENTS
@@ -164,15 +159,15 @@
   enabled: false
 - name: STRING_TEMPLATE_QUOTES
   enabled: false
-- name: NO_BRACES_IN_CONDITIONALS_AND_LOOPS
+- name: FILE_INCORRECT_BLOCKS_ORDER
   enabled: false
 - name: FUNCTION_BOOLEAN_PREFIX
   enabled: false
-- name: EMPTY_BLOCK_STRUCTURE_ERROR
-  enabled: false
-- name: WRONG_NEWLINES
-  enabled: false
 - name: KDOC_NO_CONSTRUCTOR_PROPERTY_WITH_COMMENT
   enabled: false
-- name: FILE_INCORRECT_BLOCKS_ORDER
+- name: DEBUG_PRINT
+  enabled: false
+- name: AVOID_NULL_CHECKS
+  enabled: false
+- name: CUSTOM_LABEL
   enabled: false

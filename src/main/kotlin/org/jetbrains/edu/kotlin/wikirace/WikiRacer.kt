@@ -1,4 +1,4 @@
-package org.jetbrains.edu.wikirace
+package org.jetbrains.edu.kotlin.wikirace
 
 interface WikiRacer {
     /**
