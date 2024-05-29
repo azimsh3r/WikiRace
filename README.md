@@ -30,7 +30,8 @@ or any other libraries to get and parse pages
 You can work with Wikipedia as is, or via their [API](https://en.wikipedia.org/wiki/Special:ApiSandbox#action=parse&format=json&page=Pet_door&prop=text&disabletoc=1&formatversion=2).
 
 To extract links from a Wiki page, you need to extract all internal (referring to any Wiki page) links. For `Jsoup` it 
-can be achieved via `html.select("[href^=/wiki/]").map { it.attr("href") }`. You have to exclude non-articles, which 
+can be achieved via `html.select("[href^=/wiki/]").map { it.attr("href") }`. You have to exclude the page itself, the
+main wiki page, and non-articles, which 
 include special prefixes:
 ```kotlin
 val forbiddenPrefixes = listOf(
