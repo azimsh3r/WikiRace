@@ -16,6 +16,7 @@ repositories {
 
 dependencies {
     implementation("org.jsoup:jsoup:1.17.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.0")

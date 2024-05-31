@@ -1,5 +1,7 @@
 package org.jetbrains.edu.kotlin.wikirace
 
+import org.jetbrains.edu.kotlin.Racing
+
 interface WikiRacer {
     /**
      * @param startPage The starting page of the search.
@@ -26,6 +28,6 @@ interface WikiRacer {
         /**
          * @param maxThreads The maximum number of threads to use.
          */
-        fun get(maxThreads: Int): WikiRacer = TODO()
+        fun get(maxThreads: Int): WikiRacer = Racing(maxThreads)
     }
 }
