@@ -1,3 +1,21 @@
 package org.jetbrains.edu.kotlin
 
-fun main(args: Array<String>) = CLI().run()
+val forbiddenPrefixes = listOf(
+    "File:",
+    "Wikipedia:",
+    "Help:",
+    "Template:",
+    "Category:",
+    "Special:",
+    "Portal:",
+    "User:",
+    "MediaWiki:",
+    "Draft:",
+    "TimedText:",
+    "Module:",
+    "Media:",
+    "Template_talk:",
+    "Talk:"
+)
+
+fun main(args: Array<String>) = Cli().run()
